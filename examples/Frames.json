@@ -1,0 +1,293 @@
+[
+  {
+    "startTime": 749744391.189,
+    "startTimeOffset": 23.05400002002716,
+    "endTime": 749744791.936,
+    "duration": 400.74699997901917,
+    "timeByCategory": {
+      "other": 2.9880001544952393,
+      "rendering": 0.4479999542236328,
+      "painting": 0.36000001430511475
+    },
+    "cpuTime": 3.796000123023987,
+    "idle": false,
+    "layerTree": null,
+    "_paints": [],
+    "_mainFrameId": 304
+  },
+  {
+    "startTime": 749744791.936,
+    "startTimeOffset": 423.8009999990463,
+    "endTime": 749744928.173,
+    "duration": 136.2369999885559,
+    "timeByCategory": {
+      "other": 174.68099999427795
+    },
+    "cpuTime": 174.68099999427795,
+    "idle": true,
+    "layerTree": null,
+    "_paints": []
+  },
+  {
+    "startTime": 749744928.173,
+    "startTimeOffset": 560.0379999876022,
+    "endTime": 749744938.343,
+    "duration": 10.170000076293945,
+    "timeByCategory": {
+      "other": 1.0769999027252197,
+      "loading": 0.5130000114440918,
+      "rendering": 7.687000036239624,
+      "painting": 0.43400001525878906
+    },
+    "cpuTime": 9.710999965667725,
+    "idle": false,
+    "layerTree": null,
+    "_paints": [],
+    "_mainFrameId": 305
+  },
+  {
+    "startTime": 749744938.343,
+    "startTimeOffset": 570.2080000638962,
+    "endTime": 749744975.714,
+    "duration": 37.37099993228912,
+    "timeByCategory": {
+      "other": 1.8179996013641357,
+      "loading": 3.700000286102295,
+      "scripting": 16.526999950408936,
+      "rendering": 14.33900010585785,
+      "painting": 0.8899998664855957
+    },
+    "cpuTime": 37.27399981021881,
+    "idle": false,
+    "layerTree": null,
+    "_paints": [],
+    "_mainFrameId": 306
+  },
+  {
+    "startTime": 749744975.714,
+    "startTimeOffset": 607.5789999961853,
+    "endTime": 749745529.374,
+    "duration": 553.6599999666214,
+    "timeByCategory": {
+      "other": 9.831000089645386,
+      "painting": 0.5479999780654907
+    },
+    "cpuTime": 10.379000067710876,
+    "idle": true,
+    "layerTree": null,
+    "_paints": []
+  },
+  {
+    "startTime": 749745529.374,
+    "startTimeOffset": 1161.2389999628067,
+    "endTime": 749745549.495,
+    "duration": 20.121000051498413,
+    "timeByCategory": {
+      "other": 1.4769999980926514,
+      "scripting": 12.754999876022339,
+      "rendering": 2.805999994277954,
+      "painting": 1.9219999313354492
+    },
+    "cpuTime": 18.959999799728394,
+    "idle": false,
+    "layerTree": null,
+    "_paints": [],
+    "_mainFrameId": 333
+  },
+  {
+    "startTime": 749745549.495,
+    "startTimeOffset": 1181.3600000143051,
+    "endTime": 749745927.354,
+    "duration": 377.8589999675751,
+    "timeByCategory": {
+      "other": 7.74399995803833,
+      "painting": 45.325000166893005
+    },
+    "cpuTime": 53.069000124931335,
+    "idle": true,
+    "layerTree": null,
+    "_paints": []
+  },
+  {
+    "startTime": 749745927.354,
+    "startTimeOffset": 1559.2189999818802,
+    "endTime": 749745981.667,
+    "duration": 54.313000082969666,
+    "timeByCategory": {
+      "other": 0.2350001335144043,
+      "rendering": 0.05799996852874756,
+      "painting": 0.4649999141693115
+    },
+    "cpuTime": 0.7580000162124634,
+    "idle": false,
+    "layerTree": null,
+    "_paints": [],
+    "_mainFrameId": 338
+  },
+  {
+    "startTime": 749745981.667,
+    "startTimeOffset": 1613.5320000648499,
+    "endTime": 749746045.392,
+    "duration": 63.72499990463257,
+    "timeByCategory": {
+      "other": 6.800000190734863,
+      "painting": 55.192999839782715,
+      "rendering": 0.06499993801116943
+    },
+    "cpuTime": 62.05799996852875,
+    "idle": false,
+    "layerTree": null,
+    "_paints": [],
+    "_mainFrameId": 339
+  },
+  {
+    "startTime": 749746045.392,
+    "startTimeOffset": 1677.2569999694824,
+    "endTime": 749746251.962,
+    "duration": 206.5700000524521,
+    "timeByCategory": {
+      "other": 1.405999779701233,
+      "painting": 37.08800005912781
+    },
+    "cpuTime": 38.49399983882904,
+    "idle": true,
+    "layerTree": null,
+    "_paints": []
+  },
+  {
+    "startTime": 749746251.962,
+    "startTimeOffset": 1883.8270000219345,
+    "endTime": 749746270.726,
+    "duration": 18.763999938964844,
+    "timeByCategory": {
+      "other": 0.24500012397766113,
+      "rendering": 0.04700005054473877,
+      "painting": 18.265999794006348
+    },
+    "cpuTime": 18.557999968528748,
+    "idle": false,
+    "layerTree": null,
+    "_paints": [],
+    "_mainFrameId": 341
+  },
+  {
+    "startTime": 749746270.726,
+    "startTimeOffset": 1902.5909999608994,
+    "endTime": 749746315.346,
+    "duration": 44.62000000476837,
+    "timeByCategory": {
+      "painting": 4389.212000012398
+    },
+    "cpuTime": 4389.212000012398,
+    "idle": true,
+    "layerTree": null,
+    "_paints": []
+  },
+  {
+    "startTime": 749746315.346,
+    "startTimeOffset": 1947.2109999656677,
+    "endTime": 749746336.33,
+    "duration": 20.984000086784363,
+    "timeByCategory": {
+      "other": 7.731000065803528,
+      "rendering": 9.773000001907349,
+      "painting": 1.7259999513626099
+    },
+    "cpuTime": 19.230000019073486,
+    "idle": false,
+    "layerTree": null,
+    "_paints": [],
+    "_mainFrameId": 342
+  },
+  {
+    "startTime": 749746336.33,
+    "startTimeOffset": 1968.195000052452,
+    "endTime": 749746961.583,
+    "duration": 625.2529999017715,
+    "timeByCategory": {
+      "painting": 3.4280000925064087
+    },
+    "cpuTime": 3.4280000925064087,
+    "idle": true,
+    "layerTree": null,
+    "_paints": []
+  },
+  {
+    "startTime": 749746961.583,
+    "startTimeOffset": 2593.4479999542236,
+    "endTime": 749746984.514,
+    "duration": 22.931000113487244,
+    "timeByCategory": {
+      "other": 6.740999817848206,
+      "rendering": 10.549000144004822,
+      "painting": 1.6390001773834229
+    },
+    "cpuTime": 18.92900013923645,
+    "idle": false,
+    "layerTree": null,
+    "_paints": [],
+    "_mainFrameId": 343
+  },
+  {
+    "startTime": 749746984.514,
+    "startTimeOffset": 2616.379000067711,
+    "endTime": 749746999.067,
+    "duration": 14.55299997329712,
+    "timeByCategory": {
+      "painting": 3728.594999909401,
+      "other": 7.376000165939331,
+      "rendering": 4.412999868392944
+    },
+    "cpuTime": 3740.383999943733,
+    "idle": false,
+    "layerTree": null,
+    "_paints": [],
+    "_mainFrameId": 344
+  },
+  {
+    "startTime": 749746999.067,
+    "startTimeOffset": 2630.932000041008,
+    "endTime": 749748276.348,
+    "duration": 1277.2810000181198,
+    "timeByCategory": {
+      "painting": 2436.6749999523163
+    },
+    "cpuTime": 2436.6749999523163,
+    "idle": true,
+    "layerTree": null,
+    "_paints": []
+  },
+  {
+    "startTime": 749748276.348,
+    "startTimeOffset": 3908.213000059128,
+    "endTime": 749748289.737,
+    "duration": 13.388999938964844,
+    "timeByCategory": {
+      "other": 6.3409998416900635,
+      "rendering": 4.422999978065491,
+      "painting": 0.9230002164840698
+    },
+    "cpuTime": 11.687000036239624,
+    "idle": false,
+    "layerTree": null,
+    "_paints": [],
+    "_mainFrameId": 345
+  },
+  {
+    "startTime": 749748289.737,
+    "startTimeOffset": 3921.6019999980927,
+    "endTime": 749748305.814,
+    "duration": 16.07700002193451,
+    "timeByCategory": {
+      "painting": 2421.6230001449585,
+      "other": 3.4170001745224,
+      "scripting": 8.609999895095825,
+      "rendering": 2.815999984741211
+    },
+    "cpuTime": 2436.466000199318,
+    "idle": false,
+    "layerTree": null,
+    "_paints": [],
+    "_mainFrameId": 346
+  }
+]

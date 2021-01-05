@@ -1,0 +1,23 @@
+{
+  "name": "devtools-timeline-parser",
+  "version": "0.1.0",
+  "description": "Extract meaning metrics from raw timeline data generated in Chrome Devtools",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "author": {
+    "name": "springuper",
+    "url": "github.com/springuper"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "chrome-devtools-frontend": "1.0.698043",
+    "cross-blob": "^2.0.0",
+    "resolve": "^1.19.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.16.0",
+    "eslint-config-google": "^0.14.0"
+  }
+}
