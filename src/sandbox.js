@@ -236,7 +236,7 @@ class Sandbox {
       }
 
       TimelineModel.TimelineModel.forEachEvent(events, onEventStart, onEventEnd);
-      quantizer.appendInterval(timeOffset + timeSpan + quantTime, idleIndex);  // Kick drawing the last bucket.
+      quantizer.appendInterval(timeOffset + timeSpan + quantTime, idleIndex); // Kick drawing the last bucket.
       for (let i = categoryOrder.length - 1; i > 0; --i) {
         paths[categoryOrder[i]].push({
           timeOffset: timeSpan,
@@ -259,16 +259,15 @@ class Sandbox {
       return event.name === TimelineModel.TimelineModel.RecordType.UpdateCounters;
     }
     return events.filter(isUpdateCountersEvent)
-      .sort(SDK.TracingModel.Event.compareStartTime)
-      .map(event => ({
-        startTime: event.startTime,
-        startTimeOffest: event.startTime - timeOffset,
-        ...event.args.data, // including documents, jsEventListeners, jsHeapSizeUsed and nodes
-      }));
+        .sort(SDK.TracingModel.Event.compareStartTime)
+        .map(event => ({
+          startTime: event.startTime,
+          startTimeOffest: event.startTime - timeOffset,
+          ...event.args.data, // including documents, jsEventListeners, jsHeapSizeUsed and nodes
+        }));
   }
 
   frames() {
-    const timeOffset = this.timelineModel().minimumRecordTime();
     return this.frameModel().frames();
   }
 }
