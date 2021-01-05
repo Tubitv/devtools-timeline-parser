@@ -84,6 +84,15 @@ parser.frames();
 // ]
 ```
 
+## Demo
+
+```
+# Run demo script
+$ node examples/demo.js
+
+# Then check generated CPU.json, Memory.json and Frames.json files
+```
+
 ## Thanks
 
 This project heavily borrows ideas from a depreacted project [devtools-timeline-model](https://github.com/paulirish/devtools-timeline-model).

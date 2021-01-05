@@ -6,10 +6,17 @@
   "scripts": {
     "lint": "eslint ."
   },
-  "author": {
-    "name": "springuper",
-    "url": "github.com/springuper"
+  "author": "springuper@gmail.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tubitv/devtools-timeline-parser.git"
   },
+  "keywords": [
+    "devtools",
+    "timeline",
+    "parser"
+  ],
+  "homepage": "https://github.com/Tubitv/devtools-timeline-parser",
   "license": "MIT",
   "dependencies": {
     "chrome-devtools-frontend": "1.0.698043",
