@@ -1,5 +1,7 @@
 # Devtools Timeline Parser
 
+[![npm version](https://badge.fury.io/js/devtools-timeline-parser.svg)](https://badge.fury.io/js/devtools-timeline-parser)
+
 Used to extract meaning metrics from raw timeline data generated in Chrome Devtools.
 
 
