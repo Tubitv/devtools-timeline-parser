@@ -19,7 +19,6 @@
   "homepage": "https://github.com/Tubitv/devtools-timeline-parser",
   "license": "MIT",
   "dependencies": {
-    "chrome-devtools-frontend": "1.0.698043",
     "cross-blob": "^2.0.0",
     "resolve": "^1.19.0"
   },

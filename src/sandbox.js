@@ -75,32 +75,32 @@ this.Workspace = {};
 
 requireval('./src/api-stubs.js');
 
-// chrome devtools frontend
-requireval('chrome-devtools-frontend/front_end/common/Object.js');
-requireval('chrome-devtools-frontend/front_end/common/Console.js');
-requireval('chrome-devtools-frontend/front_end/platform/utilities.js');
-requireval('chrome-devtools-frontend/front_end/common/ParsedURL.js');
-requireval('chrome-devtools-frontend/front_end/common/UIString.js');
-requireval('chrome-devtools-frontend/front_end/sdk/Target.js');
-requireval('chrome-devtools-frontend/front_end/sdk/LayerTreeBase.js');
-requireval('chrome-devtools-frontend/front_end/common/SegmentedRange.js');
-requireval('chrome-devtools-frontend/front_end/bindings/TempFile.js');
-requireval('chrome-devtools-frontend/front_end/sdk/TracingModel.js');
-requireval('chrome-devtools-frontend/front_end/sdk/ProfileTreeModel.js');
-requireval('chrome-devtools-frontend/front_end/timeline/TimelineUIUtils.js');
-requireval('chrome-devtools-frontend/front_end/timeline_model/TimelineJSProfile.js');
-requireval('chrome-devtools-frontend/front_end/sdk/CPUProfileDataModel.js');
-requireval('chrome-devtools-frontend/front_end/layers/LayerTreeModel.js');
-requireval('chrome-devtools-frontend/front_end/timeline_model/TimelineModel.js');
-requireval('chrome-devtools-frontend/front_end/timeline_model/TimelineModelFilter.js');
-requireval('chrome-devtools-frontend/front_end/data_grid/SortableDataGrid.js');
+// self-hosted chrome devtools frontend
+requireval('./src/frontend/common/Object.js');
+requireval('./src/frontend/common/Console.js');
+requireval('./src/frontend/platform/utilities.js');
+requireval('./src/frontend/common/ParsedURL.js');
+requireval('./src/frontend/common/UIString.js');
+requireval('./src/frontend/sdk/Target.js');
+requireval('./src/frontend/sdk/LayerTreeBase.js');
+requireval('./src/frontend/common/SegmentedRange.js');
+requireval('./src/frontend/bindings/TempFile.js');
+requireval('./src/frontend/sdk/TracingModel.js');
+requireval('./src/frontend/sdk/ProfileTreeModel.js');
+requireval('./src/frontend/timeline/TimelineUIUtils.js');
+requireval('./src/frontend/timeline_model/TimelineJSProfile.js');
+requireval('./src/frontend/sdk/CPUProfileDataModel.js');
+requireval('./src/frontend/layers/LayerTreeModel.js');
+requireval('./src/frontend/timeline_model/TimelineModel.js');
+requireval('./src/frontend/timeline_model/TimelineModelFilter.js');
+requireval('./src/frontend/data_grid/SortableDataGrid.js');
 
-requireval('chrome-devtools-frontend/front_end/timeline/TimelineTreeView.js');
-requireval('chrome-devtools-frontend/front_end/timeline_model/TimelineProfileTree.js');
-requireval('chrome-devtools-frontend/front_end/sdk/FilmStripModel.js');
-requireval('chrome-devtools-frontend/front_end/timeline_model/TimelineIRModel.js');
-requireval('chrome-devtools-frontend/front_end/timeline_model/TimelineFrameModel.js');
-requireval('chrome-devtools-frontend/front_end/timeline/PerformanceModel.js');
+requireval('./src/frontend/timeline/TimelineTreeView.js');
+requireval('./src/frontend/timeline_model/TimelineProfileTree.js');
+requireval('./src/frontend/sdk/FilmStripModel.js');
+requireval('./src/frontend/timeline_model/TimelineIRModel.js');
+requireval('./src/frontend/timeline_model/TimelineFrameModel.js');
+requireval('./src/frontend/timeline/PerformanceModel.js');
 
 // minor configurations
 requireval('./src/devtools-monkeypatches.js');
