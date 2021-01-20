@@ -2,8 +2,8 @@
   {
     "startTime": 749744391.189,
     "startTimeOffset": 23.05400002002716,
-    "endTime": 749744791.936,
-    "duration": 400.74699997901917,
+    "endTime": 749744440.207,
+    "duration": 49.01800000667572,
     "timeByCategory": {
       "other": 2.9880001544952393,
       "rendering": 0.4479999542236328,
@@ -11,9 +11,22 @@
     },
     "cpuTime": 3.796000123023987,
     "idle": false,
+    "dropped": true,
     "layerTree": null,
     "_paints": [],
     "_mainFrameId": 304
+  },
+  {
+    "startTime": 749744440.207,
+    "startTimeOffset": 72.07200002670288,
+    "endTime": 749744791.936,
+    "duration": 351.72899997234344,
+    "timeByCategory": {},
+    "cpuTime": 0,
+    "idle": false,
+    "dropped": false,
+    "layerTree": null,
+    "_paints": []
   },
   {
     "startTime": 749744791.936,
@@ -25,6 +38,7 @@
     },
     "cpuTime": 174.68099999427795,
     "idle": true,
+    "dropped": false,
     "layerTree": null,
     "_paints": []
   },
@@ -41,6 +55,7 @@
     },
     "cpuTime": 9.710999965667725,
     "idle": false,
+    "dropped": false,
     "layerTree": null,
     "_paints": [],
     "_mainFrameId": 305
@@ -59,6 +74,7 @@
     },
     "cpuTime": 37.27399981021881,
     "idle": false,
+    "dropped": false,
     "layerTree": null,
     "_paints": [],
     "_mainFrameId": 306
@@ -74,14 +90,15 @@
     },
     "cpuTime": 10.379000067710876,
     "idle": true,
+    "dropped": false,
     "layerTree": null,
     "_paints": []
   },
   {
     "startTime": 749745529.374,
     "startTimeOffset": 1161.2389999628067,
-    "endTime": 749745549.495,
-    "duration": 20.121000051498413,
+    "endTime": 749745140.179,
+    "duration": -389.1949999332428,
     "timeByCategory": {
       "other": 1.4769999980926514,
       "scripting": 12.754999876022339,
@@ -90,9 +107,22 @@
     },
     "cpuTime": 18.959999799728394,
     "idle": false,
+    "dropped": true,
     "layerTree": null,
     "_paints": [],
     "_mainFrameId": 333
+  },
+  {
+    "startTime": 749745140.179,
+    "startTimeOffset": 772.0440000295639,
+    "endTime": 749745549.495,
+    "duration": 409.3159999847412,
+    "timeByCategory": {},
+    "cpuTime": 0,
+    "idle": false,
+    "dropped": false,
+    "layerTree": null,
+    "_paints": []
   },
   {
     "startTime": 749745549.495,
@@ -105,14 +135,15 @@
     },
     "cpuTime": 53.069000124931335,
     "idle": true,
+    "dropped": false,
     "layerTree": null,
     "_paints": []
   },
   {
     "startTime": 749745927.354,
     "startTimeOffset": 1559.2189999818802,
-    "endTime": 749745981.667,
-    "duration": 54.313000082969666,
+    "endTime": 749745956.813,
+    "duration": 29.45899999141693,
     "timeByCategory": {
       "other": 0.2350001335144043,
       "rendering": 0.05799996852874756,
@@ -120,9 +151,22 @@
     },
     "cpuTime": 0.7580000162124634,
     "idle": false,
+    "dropped": true,
     "layerTree": null,
     "_paints": [],
     "_mainFrameId": 338
+  },
+  {
+    "startTime": 749745956.813,
+    "startTimeOffset": 1588.6779999732971,
+    "endTime": 749745981.667,
+    "duration": 24.854000091552734,
+    "timeByCategory": {},
+    "cpuTime": 0,
+    "idle": false,
+    "dropped": false,
+    "layerTree": null,
+    "_paints": []
   },
   {
     "startTime": 749745981.667,
@@ -136,6 +180,7 @@
     },
     "cpuTime": 62.05799996852875,
     "idle": false,
+    "dropped": false,
     "layerTree": null,
     "_paints": [],
     "_mainFrameId": 339
@@ -151,6 +196,7 @@
     },
     "cpuTime": 38.49399983882904,
     "idle": true,
+    "dropped": false,
     "layerTree": null,
     "_paints": []
   },
@@ -166,6 +212,7 @@
     },
     "cpuTime": 18.557999968528748,
     "idle": false,
+    "dropped": false,
     "layerTree": null,
     "_paints": [],
     "_mainFrameId": 341
@@ -180,6 +227,7 @@
     },
     "cpuTime": 4389.212000012398,
     "idle": true,
+    "dropped": false,
     "layerTree": null,
     "_paints": []
   },
@@ -195,6 +243,7 @@
     },
     "cpuTime": 19.230000019073486,
     "idle": false,
+    "dropped": false,
     "layerTree": null,
     "_paints": [],
     "_mainFrameId": 342
@@ -209,6 +258,7 @@
     },
     "cpuTime": 3.4280000925064087,
     "idle": true,
+    "dropped": false,
     "layerTree": null,
     "_paints": []
   },
@@ -224,6 +274,7 @@
     },
     "cpuTime": 18.92900013923645,
     "idle": false,
+    "dropped": false,
     "layerTree": null,
     "_paints": [],
     "_mainFrameId": 343
@@ -240,6 +291,7 @@
     },
     "cpuTime": 3740.383999943733,
     "idle": false,
+    "dropped": false,
     "layerTree": null,
     "_paints": [],
     "_mainFrameId": 344
@@ -254,6 +306,7 @@
     },
     "cpuTime": 2436.6749999523163,
     "idle": true,
+    "dropped": false,
     "layerTree": null,
     "_paints": []
   },
@@ -269,6 +322,7 @@
     },
     "cpuTime": 11.687000036239624,
     "idle": false,
+    "dropped": false,
     "layerTree": null,
     "_paints": [],
     "_mainFrameId": 345
@@ -286,6 +340,7 @@
     },
     "cpuTime": 2436.466000199318,
     "idle": false,
+    "dropped": false,
     "layerTree": null,
     "_paints": [],
     "_mainFrameId": 346
