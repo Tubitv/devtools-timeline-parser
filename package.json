@@ -1,6 +1,6 @@
 {
   "name": "devtools-timeline-parser",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Extract meaning metrics from raw timeline data generated in Chrome Devtools",
   "main": "index.js",
   "scripts": {
