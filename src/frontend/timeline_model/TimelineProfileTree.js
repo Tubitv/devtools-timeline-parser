@@ -391,7 +391,6 @@ TimelineModel.TimelineProfileTree.BottomUpRootNode = class extends TimelineModel
    */
   _grouppedTopNodes() {
     const flatNodes = this._ungrouppedTopNodes();
-    console.log('===flatNodes', flatNodes.values());
     if (!this._eventGroupIdCallback)
       return flatNodes;
     const groupNodes = new Map();
