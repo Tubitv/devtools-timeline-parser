@@ -4,6 +4,15 @@ const fs = require('fs');
 const vm = require('vm');
 
 class Parser {
+  static traverseTopDownTree(node, callback, depth = 0) {
+    callback(node, depth);
+    if (!node.hasChildren() && depth > 0) return;
+    const nextDepth = depth + 1;
+    for (const child of node.children().values()) {
+      Parser.traverseTopDownTree(child, callback, nextDepth);
+    }
+  }
+
   constructor(events) {
     // We read in our script to run, and create a vm.Script object
     /* eslint-disable no-path-concat */
@@ -25,6 +34,10 @@ class Parser {
 
   cpu() {
     return this.sandbox.cpu();
+  }
+
+  topDown(startTime = 0, endTime = Infinity) {
+    return this.sandbox.topDown(startTime, endTime);
   }
 
   memory() {

@@ -105,6 +105,9 @@ requireval('./src/frontend/timeline/PerformanceModel.js');
 // minor configurations
 requireval('./src/devtools-monkeypatches.js');
 
+// polyfill the bottom-up and topdown tree sorting
+requireval('./src/timeline-model-treeview.js');
+
 // copy from TimelineEeventOverview, used by `cpu` method in Sandbox
 class Quantizer {
   constructor(startTime, quantDuration, callback) {
@@ -248,6 +251,16 @@ class Sandbox {
     return paths;
   }
 
+  topDown(startTime = 0, endTime = Infinity) {
+    return this.topDownGroupBy(Timeline.AggregatedTimelineTreeView.GroupBy.None, startTime, endTime);
+  }
+
+  topDownGroupBy(grouping, startTime = 0, endTime = Infinity) {
+    const tree = this._buildTree('topdown', grouping, startTime, endTime);
+    new TimelineModelTreeView(tree).sortingChanged('total', 'desc');
+    return tree;
+  }
+
   memory() {
     // Based on Timeline.TimelineEventOverviewMemory
     const timeOffset = this.timelineModel().minimumRecordTime();
@@ -269,6 +282,50 @@ class Sandbox {
 
   frames() {
     return this.frameModel().frames();
+  }
+
+  _buildTree(direction, grouping, startTime = 0, endTime = Infinity, expand = true) {
+    const groupingAggregator = this._createGroupingFunction(Timeline.AggregatedTimelineTreeView.GroupBy[grouping]);
+
+    // hax wtf
+    const mainThread = this.performanceModel().timelineModel().tracks().filter(e => e.forMainFrame)[0];
+
+    const taskFilter = new TimelineModel.ExclusiveNameFilter([TimelineModel.TimelineModel.RecordType.Task]);
+    const mockTreeViewInstance = {
+      _model: this.performanceModel(),
+      _track: mainThread,
+      _tree: null,
+      _modelEvents: () => mainThread.events,
+      filters: () => [taskFilter, Timeline.TimelineUIUtils.visibleEventsFilter()],
+      _startTime: startTime,
+      _endTime: endTime,
+    };
+
+    if (direction === 'topdown') {
+      const rootNode = Timeline.AggregatedTimelineTreeView.prototype.buildTopDownTree.call(mockTreeViewInstance, false, groupingAggregator);
+      if (expand) {
+        this._expandTopDownTree(rootNode);
+      }
+      return rootNode;
+    } else if (direction === 'bottomup') {
+      return new TimelineModel.TimelineProfileTree.BottomUpRootNode(
+        mockTreeViewInstance._modelEvents(), mockTreeViewInstance.filters(), mockTreeViewInstance._startTime, mockTreeViewInstance._endTime,
+        groupingAggregator);
+    } else {
+      throw new Error('unknown');
+    }
+  }
+
+  _createGroupingFunction(groupBy) {
+    return Timeline.AggregatedTimelineTreeView.prototype._groupingFunction(groupBy);
+  }
+
+  _expandTopDownTree(node, depth = 0) {
+    if (!node.hasChildren() && depth > 0) return;
+    const nextDepth = depth + 1;
+    for (const child of node.children().values()) {
+      this._expandTopDownTree(child, nextDepth);
+    }
   }
 }
 
