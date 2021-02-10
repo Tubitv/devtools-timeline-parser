@@ -84,6 +84,34 @@ parser.frames();
 //   },
 //   ...
 // ]
+
+// get top down profile tree and find out time-consuming profiles
+const topDownRootNode = parser.topDown();
+Parser.traverseTopDownTree(topDownRootNode, (node, depth) => {
+  if (node.selfTime >= 16 && node.selfTime !== Infinity) {
+    console.log({
+      id: node.id,
+      selfTime: node.selfTime,
+      totalTime: node.totalTime,
+      eventArgs: node.event.args,
+    });
+  }
+});
+// outputs:
+// { id: 'CompositeLayers',
+//   selfTime: 20.591999650001526,
+//   totalTime: 20.941999673843384,
+//   eventArgs: { layerTreeId: 1 } }
+// { id: 'EvaluateScript',
+//   selfTime: 42.007999897003174,
+//   totalTime: 97.35699999332428,
+//   eventArgs:
+//    { data:
+//       { columnNumber: 0,
+//         frame: '16DBFDE9A1489A570B1EEE14792DB5A9',
+//         lineNumber: 0,
+//         url:
+//          'https://www.apple.com/metrics/ac-analytics/2.12.0/scripts/ac-analytics.js' } } }
 ```
 
 ## Demo
