@@ -36,8 +36,8 @@ class Parser {
     return this.sandbox.cpu();
   }
 
-  topDown(startTime = 0, endTime = Infinity) {
-    return this.sandbox.topDown(startTime, endTime);
+  topDown(startTime = 0, endTime = Infinity, doNotAggregate = false, expand = true) {
+    return this.sandbox.topDown(startTime, endTime, doNotAggregate, expand);
   }
 
   memory() {

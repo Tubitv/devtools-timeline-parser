@@ -251,12 +251,12 @@ class Sandbox {
     return paths;
   }
 
-  topDown(startTime = 0, endTime = Infinity) {
-    return this.topDownGroupBy(Timeline.AggregatedTimelineTreeView.GroupBy.None, startTime, endTime);
+  topDown(startTime = 0, endTime = Infinity, doNotAggregate = false, expand = true) {
+    return this.topDownGroupBy(Timeline.AggregatedTimelineTreeView.GroupBy.None, startTime, endTime, doNotAggregate, expand);
   }
 
-  topDownGroupBy(grouping, startTime = 0, endTime = Infinity) {
-    const tree = this._buildTree('topdown', grouping, startTime, endTime);
+  topDownGroupBy(grouping, startTime, endTime, doNotAggregate, expand) {
+    const tree = this._buildTree('topdown', grouping, startTime, endTime, doNotAggregate, expand);
     new TimelineModelTreeView(tree).sortingChanged('total', 'desc');
     return tree;
   }
@@ -284,7 +284,7 @@ class Sandbox {
     return this.frameModel().frames();
   }
 
-  _buildTree(direction, grouping, startTime = 0, endTime = Infinity, expand = true) {
+  _buildTree(direction, grouping, startTime, endTime, doNotAggregate, expand) {
     const groupingAggregator = this._createGroupingFunction(Timeline.AggregatedTimelineTreeView.GroupBy[grouping]);
 
     // hax wtf
@@ -302,7 +302,7 @@ class Sandbox {
     };
 
     if (direction === 'topdown') {
-      const rootNode = Timeline.AggregatedTimelineTreeView.prototype.buildTopDownTree.call(mockTreeViewInstance, false, groupingAggregator);
+      const rootNode = Timeline.AggregatedTimelineTreeView.prototype.buildTopDownTree.call(mockTreeViewInstance, doNotAggregate, groupingAggregator);
       if (expand) {
         this._expandTopDownTree(rootNode);
       }
