@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const data = require('/Users/shangchun/Repo/www/src/test/perf/artifacts/timeline/ott.json');
+const data = require('./Profile-Apple-Homepage-20210105T120102.json');
 const Parser = require('../');
 
 const parser = new Parser(data);
