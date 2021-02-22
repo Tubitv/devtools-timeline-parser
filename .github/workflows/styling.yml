@@ -26,4 +26,3 @@ jobs:
       run: npm ci
     - name: Check code styling
       run: npm run lint
-

@@ -252,7 +252,8 @@ class Sandbox {
   }
 
   topDown(startTime = 0, endTime = Infinity, doNotAggregate = false, expand = true) {
-    return this.topDownGroupBy(Timeline.AggregatedTimelineTreeView.GroupBy.None, startTime, endTime, doNotAggregate, expand);
+    const grouping = Timeline.AggregatedTimelineTreeView.GroupBy.None;
+    return this.topDownGroupBy(grouping, startTime, endTime, doNotAggregate, expand);
   }
 
   topDownGroupBy(grouping, startTime, endTime, doNotAggregate, expand) {
@@ -302,15 +303,19 @@ class Sandbox {
     };
 
     if (direction === 'topdown') {
-      const rootNode = Timeline.AggregatedTimelineTreeView.prototype.buildTopDownTree.call(mockTreeViewInstance, doNotAggregate, groupingAggregator);
+      const rootNode = Timeline.AggregatedTimelineTreeView.prototype.buildTopDownTree.call(
+          mockTreeViewInstance, doNotAggregate, groupingAggregator);
       if (expand) {
         this._expandTopDownTree(rootNode);
       }
       return rootNode;
     } else if (direction === 'bottomup') {
       return new TimelineModel.TimelineProfileTree.BottomUpRootNode(
-        mockTreeViewInstance._modelEvents(), mockTreeViewInstance.filters(), mockTreeViewInstance._startTime, mockTreeViewInstance._endTime,
-        groupingAggregator);
+          mockTreeViewInstance._modelEvents(),
+          mockTreeViewInstance.filters(),
+          mockTreeViewInstance._startTime,
+          mockTreeViewInstance._endTime,
+          groupingAggregator);
     } else {
       throw new Error('unknown');
     }
